@@ -111,7 +111,7 @@ Locate the log entry for the executed Get-LocalUser command.
 
 Take a screenshot of the event details for documentation.
 
-*Notes*
+## *Notes*
 Event ID Reference
 4103 → Module Logging
 
@@ -119,7 +119,7 @@ Event ID Reference
 
 4688 → Process Creation (if Security Logging is enabled)
 
-Outcome
+## Outcome
 Successfully enabled PowerShell logging.
 
 Simulated a suspicious PowerShell command.

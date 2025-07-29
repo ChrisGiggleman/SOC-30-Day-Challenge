@@ -14,6 +14,37 @@ The goal of this lab is to:
 
 ---
 
+## Example logs
+🐧Linux auth.log Example
+
+Apr  7 10:42:15 ubuntu sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 54321 ssh2
+Explanation:
+
+Apr 7 10:42:15 — Timestamp
+ubuntu — Hostname
+sshd[12345] — Service name and process ID
+Failed password for invalid user admin — Failed login attempt
+from 192.168.1.100 — Source IP address
+port 54321 — Source port
+ssh2 — Protocol version
+
+---
+
+## Log Sources on Linux:
+
+System Logs: Stored in /var/log/, including files like syslog (system messages), auth.log (authentication attempts), and kern.log (kernel-related logs).
+Application Logs: Application-specific logs like Apache (/var/log/apache2/access.log) or MySQL (/var/log/mysql/error.log).
+
+## Log Sources on Windows:
+
+Event Viewer: Provides access to logs such as:
+System Logs: Logs related to operating system events.
+Security Logs: Logs related to login attempts, permission changes, etc.
+Application Logs: Logs for system applications.
+PowerShell Logs: Logs for PowerShell commands, including suspicious execution.
+
+---
+
 ## Step 1: Environment Setup
 
 ### Install Group Policy Editor (If Not Pre-installed)
@@ -100,6 +131,13 @@ Event ID Reference
 4104 → Script Block Logging (command content)
 
 4688 → Process Creation (if Security Logging is enabled)
+
+## Popular Tools for Log Analysis:
+
+ELK Stack (Elasticsearch, Logstash, Kibana): A powerful suite for log collection, storage, and visualization.
+Splunk: A leading tool for searching, analyzing, and visualizing machine-generated data.
+Graylog: An open-source log management solution.
+Wazuh: An open-source security monitoring platform that integrates well with ELK for log analysis and threat detection.
 
 ## Outcome
 Successfully enabled PowerShell logging.

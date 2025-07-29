@@ -111,6 +111,7 @@ Locate the log entry for the executed Get-LocalUser command.
 
 Take a screenshot of the event details for documentation.
 
+*Notes*
 Event ID Reference
 4103 → Module Logging
 

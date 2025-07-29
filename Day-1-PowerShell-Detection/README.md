@@ -34,17 +34,16 @@ The goal of this lab is to:
 Restart the computer/VM.
 
 Confirm installation by opening gpedit.msc:
+<img width="975" height="696" alt="image" src="https://github.com/user-attachments/assets/f44a903c-0c10-442b-a8c1-cafd9b80f447" />
+
 
 Create a shortcut:
 
 Right-click desktop → New → Shortcut
 
-Target:
+Type: %systemroot%\system32\gpedit.msc
+<img width="272" height="469" alt="image" src="https://github.com/user-attachments/assets/83eaa79b-e335-42ff-b489-274dce7f2580" />
 
-shell
-Copy
-Edit
-%systemroot%\system32\gpedit.msc
 Step 2: Enable PowerShell Logging
 Force Group Policy Update
 Open PowerShell as Administrator and run:

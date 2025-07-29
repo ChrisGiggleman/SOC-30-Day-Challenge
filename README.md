@@ -17,7 +17,7 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/chris-giggleman).
 2. Edit the README.md with your lab details.
 3. Update the main index.md if you want to modify titles or add links to new days.
 4. Commit changes and push to main:
-   `ash
+   
    git add .
    git commit -m "Added Day X content"
    git push origin main
@@ -28,9 +28,6 @@ Put screenshots in the screenshots/ subfolder for that day.
 
 Reference them:
 
-markdown
-Copy
-Edit
 ![Screenshot Description](./screenshots/your-screenshot.png)
 License
 MIT License © 2025 Chris Giggleman

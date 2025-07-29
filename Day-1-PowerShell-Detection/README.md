@@ -45,13 +45,10 @@ Type: %systemroot%\system32\gpedit.msc
 
 <img width="272" height="469" alt="image" src="https://github.com/user-attachments/assets/83eaa79b-e335-42ff-b489-274dce7f2580" />
 
-Step 2: Enable PowerShell Logging
+## Step 2: Enable PowerShell Logging
 Force Group Policy Update
 Open PowerShell as Administrator and run:
 
-powershell
-Copy
-Edit
 gpupdate /force
 Verify Logging Settings
 Check if logging is enabled:
@@ -64,9 +61,6 @@ Get-ItemProperty -Path HKLM:\Software\Policies\Microsoft\Windows\PowerShell\Modu
 Get-ExecutionPolicy -List
 If keys do not exist, create and enable logging:
 
-powershell
-Copy
-Edit
 # Script Block Logging
 New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging" -Force
 Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging" `
@@ -81,29 +75,21 @@ Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\Mod
 New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\Transcription" -Force
 Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\Transcription" `
     -Name "EnableTranscripting" -Value 1
-Step 3: Simulate Suspicious PowerShell Activity
+## Step 3: Simulate Suspicious PowerShell Activity
 Run the following elevated PowerShell command:
 
-powershell
-Copy
-Edit
 Get-LocalUser | Select-Object Name, Enabled
 Why suspicious?
 Attackers may enumerate local accounts after gaining access to a host. This command could indicate reconnaissance.
 
-Step 4: Detect Suspicious Activity in Windows Event Viewer
+## Step 4: Detect Suspicious Activity in Windows Event Viewer
 Press Win + R, type:
 
-Copy
-Edit
 eventvwr.msc
 and press Enter.
 
 Navigate to:
 
-nginx
-Copy
-Edit
 Applications and Services Logs → Microsoft → Windows → PowerShell → Operational
 Filter the log for Event ID 4104 (PowerShell script execution).
 

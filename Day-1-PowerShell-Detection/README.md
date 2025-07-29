@@ -42,6 +42,7 @@ Create a shortcut:
 Right-click desktop → New → Shortcut
 
 Type: %systemroot%\system32\gpedit.msc
+
 <img width="272" height="469" alt="image" src="https://github.com/user-attachments/assets/83eaa79b-e335-42ff-b489-274dce7f2580" />
 
 Step 2: Enable PowerShell Logging
@@ -109,6 +110,9 @@ Filter the log for Event ID 4104 (PowerShell script execution).
 Locate the log entry for the executed Get-LocalUser command.
 
 Take a screenshot of the event details for documentation.
+
+<img width="975" height="720" alt="image" src="https://github.com/user-attachments/assets/ecfaf029-218f-4bb1-a5d6-f5f30c172347" />
+
 
 ## *Notes*
 Event ID Reference

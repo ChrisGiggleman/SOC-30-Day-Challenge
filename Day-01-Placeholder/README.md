@@ -1,7 +1,3 @@
-Day 1: Simulating and Detecting Windows PowerShell Events
-markdown
-Copy
-Edit
 # Day 1: Simulating and Detecting Windows PowerShell Events
 
 ## Lab Environment
@@ -53,9 +49,6 @@ gpupdate /force
 Verify Logging Settings
 Check if logging is enabled:
 
-powershell
-Copy
-Edit
 Get-ItemProperty -Path HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging
 Get-ItemProperty -Path HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ModuleLogging
 Get-ExecutionPolicy -List

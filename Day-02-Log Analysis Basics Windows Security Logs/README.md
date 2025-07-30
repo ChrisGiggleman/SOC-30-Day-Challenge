@@ -38,30 +38,23 @@ Open **PowerShell (Run as Administrator)** and execute:
 net use \\127.0.0.1\IPC$ /user:Test1 IncorrectPassword
 net use \\127.0.0.1\IPC$ /user:Test2 BillyBob
 net use \\127.0.0.1\IPC$ /user:Test3 Password
-Explanation:
 
-net use – Connects to network shares or printers.
+> **Explanation:**  
+> - **net use** – Connects to network shares or printers.  
+> - **\\127.0.0.1\IPC$** – Hidden administrative share on localhost.  
+> - **/user:TestX** – Specifies a username for authentication.  
+> - **IncorrectPassword** – Purposely incorrect credentials to trigger failed login events.
 
-\127.0.0.1\IPC$ – Hidden administrative share on localhost.
-
-/user:TestX – Specifies a username for authentication.
-
-IncorrectPassword – Purposely incorrect credentials to trigger failed login events.
+---
 
 ### Step 3: Analyze Security Logs
-Open Event Viewer (eventvwr.msc).
-
-Navigate to:
-
-Windows Logs → Security
-
-Use Filter Current Log… and filter for:
-
-Event ID: 4625 (Failed logon attempts)
-
-Review log details:
-
-Identify username, source IP, and failure reason.
+1. Open **Event Viewer** (`eventvwr.msc`).  
+2. Navigate to **Windows Logs → Security**.  
+3. Use **Filter Current Log…** and filter for:
+   - **Event ID: 4625** (Failed logon attempts)  
+4. Review log details:
+   - Identify username, source IP, and failure reason. 
+---
 
 ## Conclusion
 Windows Security Logs provide critical insight into login activity, privilege escalation, and account changes.

@@ -36,7 +36,9 @@ Understand and analyze key Windows Security Log Event IDs, simulate failed login
 Open **PowerShell (Run as Administrator)** and execute:
 
 net use \\127.0.0.1\IPC$ /user:Test1 IncorrectPassword
+
 net use \\127.0.0.1\IPC$ /user:Test2 BillyBob
+
 net use \\127.0.0.1\IPC$ /user:Test3 Password
 
 > **Explanation:**  

@@ -29,6 +29,8 @@ Understand and analyze key Windows Security Log Event IDs, simulate failed login
    - `Test1`
    - `Test2`
    - `Test3`
+     
+<img width="975" height="738" alt="image" src="https://github.com/user-attachments/assets/ff64c74f-2fab-4dbd-8526-48becfd31193" />
 
 ---
 
@@ -46,6 +48,9 @@ net use \\127.0.0.1\IPC$ /user:Test3 Password
 > - **\\127.0.0.1\IPC$** – Hidden administrative share on localhost.  
 > - **/user:TestX** – Specifies a username for authentication.  
 > - **IncorrectPassword** – Purposely incorrect credentials to trigger failed login events.
+
+<img width="975" height="553" alt="image" src="https://github.com/user-attachments/assets/472ca459-7a2d-4269-870b-a64236b4271b" />
+
 
 ---
 
@@ -73,5 +78,8 @@ Privilege escalation attempts (4672)
 
 ## Submission Requirements
 Screenshot of Event ID 4624 (Successful login).
+<img width="1023" height="762" alt="image" src="https://github.com/user-attachments/assets/cbfa91cc-9b8a-4340-8424-273023d8a82a" />
+
 
 Screenshot of Event ID 4625 (Failed login attempt).
+<img width="975" height="737" alt="image" src="https://github.com/user-attachments/assets/9e669c19-1c31-4d7b-a8a8-f30ad2ea83d0" />

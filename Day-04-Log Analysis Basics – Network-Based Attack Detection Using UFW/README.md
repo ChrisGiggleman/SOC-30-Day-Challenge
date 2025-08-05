@@ -1,6 +1,6 @@
 ---
 
-# 🔍 Day 4: Log Analysis Basics – Network-Based Attack Detection Using UFW
+### 🔍 Day 4: Log Analysis Basics – Network-Based Attack Detection Using UFW
 
 > 🎯 **Objective:**  
 > Simulate a network-based port scan attack and detect it using `ufw.log` logs on a Linux system.  

@@ -129,12 +129,16 @@ msbuild.exe	C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe	Execute C#
 installutil.exe	C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe	Code execution during assembly registration
 schtasks.exe	C:\Windows\System32\schtasks.exe	Persistence via scheduled tasks
 
+---
+
 ✅ Conclusion
 🔍 PowerShell logs are critical for detecting malicious actions.
 
 🛡️ SOC analysts rely on Event IDs like 4103 & 4104 for post-exploitation analysis.
 
 🚨 Threat detection starts with strong visibility and proper logging.
+
+---
 
 📸 Submission Requirement
 🎯 Submit a screenshot of an Event ID 4103 showing PowerShell command execution.

@@ -80,7 +80,7 @@ You’ll be prompted to select an execution policy. Here are the options:
 ### Step 1: Run a PowerShell Command
 Open PowerShell as Administrator and run:
 
-```
+
 Start-Process "notepad.exe" -ArgumentList "C:\Windows\System32\drivers\etc\hosts"
 What it does:
 

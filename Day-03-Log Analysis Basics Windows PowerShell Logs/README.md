@@ -129,6 +129,8 @@ msbuild.exe	C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe	Execute C#
 installutil.exe	C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe	Code execution during assembly registration
 schtasks.exe	C:\Windows\System32\schtasks.exe	Persistence via scheduled tasks
 
+---
+
 ✅ Conclusion
 🔍 PowerShell logs are critical for detecting malicious actions.
 

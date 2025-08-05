@@ -1,7 +1,4 @@
----
-title: "Day 3: Log Analysis Basics – Windows PowerShell Logs"
-description: "Learn how to enable, generate, and analyze PowerShell logs for Windows threat detection and SOC operations."
-tags: [PowerShell, Blue Team, Logging, Event Viewer, SOC, Cybersecurity Lab]
+
 ---
 
 # ⚡️ Day 3: Log Analysis Basics – Windows PowerShell Logs

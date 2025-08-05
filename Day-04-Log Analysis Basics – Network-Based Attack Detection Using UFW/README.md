@@ -2,9 +2,9 @@
 
 ### 🔍 Day 4: Log Analysis Basics – Network-Based Attack Detection Using UFW
 
-> 🎯 **Objective:**  
-> Simulate a network-based port scan attack and detect it using `ufw.log` logs on a Linux system.  
-> You will launch an HTTP scan probe from a Kali Linux attacker machine and detect it on the Ubuntu victim machine.
+🎯 **Objective:**  
+Simulate a network-based port scan attack and detect it using `ufw.log` logs on a Linux system.  
+You will launch an HTTP scan probe from a Kali Linux attacker machine and detect it on the Ubuntu victim machine.
 
 ---
 
@@ -73,10 +73,15 @@ nmap -p80 <Target-IP>
 Step 2: Detection & Analysis
 1. Install UFW on the target (Ubuntu) machine:
 
+<img width="975" height="454" alt="image" src="https://github.com/user-attachments/assets/07fe8ebe-8385-4ddd-ab43-f79d00824fd5" />
+
 sudo apt install ufw
 sudo ufw enable
 sudo ufw logging on
 sudo ufw logging high
+
+<img width="814" height="202" alt="image" src="https://github.com/user-attachments/assets/6953104f-56fd-42ef-907c-182a8aeef2cc" />
+
 
 2. Block HTTP traffic from attacker IP:
 
@@ -112,4 +117,5 @@ Detecting & blocking IPs performing scans is a critical proactive defense measur
 📸 Submission Requirement
 🎯 Submit a screenshot of a blocked scan event from /var/log/ufw.log showing the attacker’s IP.
 Example screenshot placeholder:
+<img width="975" height="582" alt="image" src="https://github.com/user-attachments/assets/bf35d893-0b8b-41ee-bb4b-3e6ced836a91" />
 

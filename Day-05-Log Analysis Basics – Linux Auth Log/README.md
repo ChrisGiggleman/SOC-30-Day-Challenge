@@ -109,13 +109,17 @@ Attempts on sensitive accounts (root, admin)
 
 A sudden success after multiple failures → likely brute force success
 
-✅ Conclusion
+---
+
+###✅ Conclusion
 Authentication logs are critical for detecting brute force attacks.
 
 Multiple failures from a single IP is a strong indicator of malicious activity.
 
 Combine log analysis with tools like Fail2ban to block repeat offenders automatically.
 
-📸 Submission Requirement
+---
+
+## 📸 Submission Requirement
 🎯 Submit a screenshot showing failed SSH login attempts detected in /var/log/auth.log.
 Example placeholder screenshot:

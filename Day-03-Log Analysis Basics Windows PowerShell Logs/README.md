@@ -80,7 +80,7 @@ You’ll be prompted to select an execution policy. Here are the options:
 ### Step 1: Run a PowerShell Command
 Open PowerShell as Administrator and run:
 
-```powershell
+```
 Start-Process "notepad.exe" -ArgumentList "C:\Windows\System32\drivers\etc\hosts"
 What it does:
 
@@ -93,8 +93,8 @@ Triggers PowerShell logging.
 
 ---
 
-### Step 2: Check Event Viewer Logs
-Open Event Viewer
+Step 2: Check Event Viewer Logs
+Open Event Viewer.
 
 Navigate to:
 Applications and Services Logs → Microsoft → Windows → PowerShell → Operational
@@ -105,7 +105,7 @@ Event ID 4103 (detailed command execution)
 
 Optionally check for 4104, 4101, 4698
 
-🖼️ Example Screenshot:
+🖼️ Example Screenshot: (Add your own)
 
 🧠 Blue Team Relevance: Why This Matters
 PowerShell logging helps detect:
@@ -129,15 +129,14 @@ msbuild.exe	C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe	Execute C#
 installutil.exe	C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe	Code execution during assembly registration
 schtasks.exe	C:\Windows\System32\schtasks.exe	Persistence via scheduled tasks
 
----
-
 ✅ Conclusion
 🔍 PowerShell logs are critical for detecting malicious actions.
 
-🛡️ SOC analysts use Event IDs like 4103 & 4104 for post-exploitation analysis.
+🛡️ SOC analysts rely on Event IDs like 4103 & 4104 for post-exploitation analysis.
 
-🚨 Threat detection begins with good visibility and logging practices.
+🚨 Threat detection starts with strong visibility and proper logging.
 
 📸 Submission Requirement
 🎯 Submit a screenshot of an Event ID 4103 showing PowerShell command execution.
-<img width="1027" height="780" alt="image" src="https://github.com/user-attachments/assets/d3c86359-13ff-4f9d-a47f-ddd4346fa2f1" />
+
+<img width="1027" height="780" alt="image" src="https://github.com/user-attachments/assets/d3c86359-13ff-4f9d-a47f-ddd4346fa2f1" /> ```

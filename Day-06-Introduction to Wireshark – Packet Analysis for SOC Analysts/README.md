@@ -2,9 +2,9 @@
 
 # 📡 Day 6: Introduction to Wireshark – Packet Analysis for SOC Analysts
 
-> 🎯 **Objective:**  
-> This lab introduces Wireshark, a powerful packet analysis tool used by SOC analysts to investigate network traffic.  
-> You will learn to create a custom Wireshark profile, apply display and capture filters, and identify ICMP packets.
+🎯 **Objective:**  
+This lab introduces Wireshark, a powerful packet analysis tool used by SOC analysts to investigate network traffic.  
+You will learn to create a custom Wireshark profile, apply display and capture filters, and identify ICMP packets.
 
 ---
 
